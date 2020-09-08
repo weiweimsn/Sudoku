@@ -1,0 +1,42 @@
+html,
+body {
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+body div {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+input {
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
+.topThreeSections section,
+.middleThreeSections section,
+.bottomThreeSections section {
+  display: inline-block;
+}
+
+#section1,
+#section3,
+#section5,
+#section7,
+#section9 {
+  background-color: aliceblue;
+}
+
+#section1 input,
+#section3 input,
+#section5 input,
+#section7 input,
+#section9 input {
+  background-color: greenyellow;
+  border-color: greenyellow;
+}

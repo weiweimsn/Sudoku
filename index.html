@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sodoku</title>
+    <link href="./main.css" rel="stylesheet" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <!-- <div id="sodoku">
+        <div class="topThreeSections">
+            <section id="section1">
+                <input type="text" disabled value="3" />
+                <input type="text" disabled value="5" />
+                <input type="text" />
+                <br />
+                <input type="text" />
+                <input type="text" />
+                <input type="text" disabled value="6" />
+                <br />
+                <input type="text" />
+                <input type="text" disabled value="8" />
+                <input type="text" />
+            </section>
+            <section id="section2">
+                <input type="text" disabled value="8" />
+                <input type="text" />
+                <input type="text" />
+                <br />
+                <input type="text" />
+                <input type="text" disabled value="3" />
+                <input type="text" />
+                <br />
+                <input type="text" disabled value="6" />
+                <input type="text" />
+                <input type="text" disabled value="2" />
+            </section>
+            <section id="section3">
+                <input type="text" />
+                <input type="text" disabled value="9" />
+                <input type="text" />
+                <br />
+                <input type="text" />
+                <input type="text" />
+                <input type="text" disabled value="7" />
+                <br />
+                <input type="text" />
+                <input type="text" />
+                <input type="text" disabled value="1" />
+            </section>
+        </div>
+        <div class="middleThreeSections">
+            <section id="section4">
+                <input type="text" />
+                <input type="text" disabled value="4" />
+                <input type="text" />
+                <br />
+                <input type="text" />
+                <input type="text" disabled value="9" />
+                <input type="text" />
+                <br />
+                <input type="text" />
+                <input type="text" />
+                <input type="text" disabled value="2" />
+            </section>
+            <section id="section5">
+                <input type="text" />
+                <input type="text" />
+                <input type="text" disabled value="8" />
+                <br />
+                <input type="text" />
+                <input type="text" disabled value="1" />
+                <input type="text" />
+                <br />
+                <input type="text" disabled value="5" />
+                <input type="text" />
+                <input type="text" />
+            </section>
+            <section id="section6">
+                <input type="text" disabled value="3" />
+                <input type="text" />
+                <input type="text" />
+                <br />
+                <input type="text" />
+                <input type="text" disabled value="6" />
+                <input type="text" />
+                <br />
+                <input type="text" />
+                <input type="text" disabled value="1" />
+                <input type="text" />
+            </section>
+        </div>
+        <div class="bottomThreeSections">
+            <section id="section7">
+                <input type="text" disabled value="4" />
+                <input type="text" />
+                <input type="text" />
+                <br />
+                <input type="text" disabled value="5" />
+                <input type="text" />
+                <input type="text" />
+                <br />
+                <input type="text" />
+                <input type="text" disabled value="3" />
+                <input type="text" />
+            </section>
+            <section id="section8">
+                <input type="text" disabled value="9" />
+                <input type="text" />
+                <input type="text" disabled value="6" />
+                <br />
+                <input type="text" />
+                <input type="text" disabled value="2" />
+                <input type="text" />
+                <br />
+                <input type="text" />
+                <input type="text" />
+                <input type="text" disabled value="5" />
+            </section>
+            <section id="section9">
+                <input type="text" />
+                <input type="text" disabled value="5" />
+                <input type="text" />
+                <br />
+                <input type="text" disabled value="9" />
+                <input type="text" />
+                <input type="text" />
+                <br />
+                <input type="text" />
+                <input type="text" disabled value="7" />
+                <input type="text" disabled value="2" />
+            </section>
+        </div>
+    </div> -->
+    <div id="sodoku">
+        <div class="topThreeSections">
+            <section id="section1">
+                <input type="text" value="3" />
+                <input type="text" value="5" />
+                <input type="text" />
+                <br />
+                <input type="text" />
+                <input type="text" />
+                <input type="text" value="6" />
+                <br />
+                <input type="text" />
+                <input type="text" value="8" />
+                <input type="text" />
+            </section>
+            <section id="section2">
+                <input type="text" value="8" />
+                <input type="text" />
+                <input type="text" />
+                <br />
+                <input type="text" />
+                <input type="text" value="3" />
+                <input type="text" />
+                <br />
+                <input type="text" value="6" />
+                <input type="text" />
+                <input type="text" value="2" />
+            </section>
+            <section id="section3">
+                <input type="text" />
+                <input type="text" value="9" />
+                <input type="text" />
+                <br />
+                <input type="text" />
+                <input type="text" />
+                <input type="text" value="7" />
+                <br />
+                <input type="text" />
+                <input type="text" />
+                <input type="text" value="1" />
+            </section>
+        </div>
+        <div class="middleThreeSections">
+            <section id="section4">
+                <input type="text" />
+                <input type="text" value="4" />
+                <input type="text" />
+                <br />
+                <input type="text" />
+                <input type="text" value="9" />
+                <input type="text" />
+                <br />
+                <input type="text" />
+                <input type="text" />
+                <input type="text" value="2" />
+            </section>
+            <section id="section5">
+                <input type="text" />
+                <input type="text" />
+                <input type="text" value="8" />
+                <br />
+                <input type="text" />
+                <input type="text" value="1" />
+                <input type="text" />
+                <br />
+                <input type="text" value="5" />
+                <input type="text" />
+                <input type="text" />
+            </section>
+            <section id="section6">
+                <input type="text" value="3" />
+                <input type="text" />
+                <input type="text" />
+                <br />
+                <input type="text" />
+                <input type="text" value="6" />
+                <input type="text" />
+                <br />
+                <input type="text" />
+                <input type="text" value="1" />
+                <input type="text" />
+            </section>
+        </div>
+        <div class="bottomThreeSections">
+            <section id="section7">
+                <input type="text" value="4" />
+                <input type="text" />
+                <input type="text" />
+                <br />
+                <input type="text" value="5" />
+                <input type="text" />
+                <input type="text" />
+                <br />
+                <input type="text" />
+                <input type="text" value="3" />
+                <input type="text" />
+            </section>
+            <section id="section8">
+                <input type="text" value="9" />
+                <input type="text" />
+                <input type="text" value="6" />
+                <br />
+                <input type="text" />
+                <input type="text" value="2" />
+                <input type="text" />
+                <br />
+                <input type="text" />
+                <input type="text" />
+                <input type="text" value="5" />
+            </section>
+            <section id="section9">
+                <input type="text" />
+                <input type="text" value="5" />
+                <input type="text" />
+                <br />
+                <input type="text" value="9" />
+                <input type="text" />
+                <input type="text" />
+                <br />
+                <input type="text" />
+                <input type="text" value="7" />
+                <input type="text" value="2" />
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>
